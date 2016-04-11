@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    NSMutableArray *arr;
+}
 
+@property (weak, nonatomic) IBOutlet UITableView *tbl_vw;
+@property(retain,nonatomic)NSString *str_vw_1;
 
 @end
 

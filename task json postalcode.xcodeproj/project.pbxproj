@@ -14,6 +14,9 @@
 		7EB9CBC81CA0250E0008F62D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB9CBC71CA0250E0008F62D /* Images.xcassets */; };
 		7EB9CBCB1CA0250E0008F62D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB9CBC91CA0250E0008F62D /* LaunchScreen.xib */; };
 		7EB9CBD71CA0250E0008F62D /* task_json_postalcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB9CBD61CA0250E0008F62D /* task_json_postalcodeTests.m */; };
+		7EB9CBE21CA0281F0008F62D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB9CBE11CA0281F0008F62D /* SecondViewController.m */; };
+		E75B76D61CA168A80029ACE7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75B76D51CA168A80029ACE7 /* MapKit.framework */; };
+		E75B76D91CA168BB0029ACE7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B76D81CA168BB0029ACE7 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		7EB9CBD01CA0250E0008F62D /* task json postalcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "task json postalcodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB9CBD51CA0250E0008F62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB9CBD61CA0250E0008F62D /* task_json_postalcodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = task_json_postalcodeTests.m; sourceTree = "<group>"; };
+		7EB9CBE01CA0281F0008F62D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7EB9CBE11CA0281F0008F62D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E75B76D51CA168A80029ACE7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E75B76D71CA168BB0029ACE7 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		E75B76D81CA168BB0029ACE7 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75B76D61CA168A80029ACE7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,11 @@
 		7EB9CBAE1CA0250E0008F62D = {
 			isa = PBXGroup;
 			children = (
+				E75B76D71CA168BB0029ACE7 /* MapViewController.h */,
+				E75B76D81CA168BB0029ACE7 /* MapViewController.m */,
+				E75B76D51CA168A80029ACE7 /* MapKit.framework */,
+				7EB9CBE01CA0281F0008F62D /* SecondViewController.h */,
+				7EB9CBE11CA0281F0008F62D /* SecondViewController.m */,
 				7EB9CBB91CA0250E0008F62D /* task json postalcode */,
 				7EB9CBD31CA0250E0008F62D /* task json postalcodeTests */,
 				7EB9CBB81CA0250E0008F62D /* Products */,
@@ -219,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB9CBE21CA0281F0008F62D /* SecondViewController.m in Sources */,
 				7EB9CBC31CA0250E0008F62D /* ViewController.m in Sources */,
+				E75B76D91CA168BB0029ACE7 /* MapViewController.m in Sources */,
 				7EB9CBC01CA0250E0008F62D /* AppDelegate.m in Sources */,
 				7EB9CBBD1CA0250E0008F62D /* main.m in Sources */,
 			);
@@ -348,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "task json postalcode/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "task json postalcode/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +434,7 @@
 				7EB9CBDC1CA0250E0008F62D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EB9CBDD1CA0250E0008F62D /* Build configuration list for PBXNativeTarget "task json postalcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				7EB9CBDF1CA0250E0008F62D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
